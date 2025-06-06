@@ -7,16 +7,54 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CustomerCardHero from "$lib/components/layout/hero-sections/CustomerCardHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="/sample.png"
-	generating
+<CustomerCardHero
+	title="Every call, perfectly dispatched"
+	subtitle="The fastest way to assign the right tech, boost revenue, and run a smoother board."
+	centered={false}
+	customers={[
+		{
+			name: "Jessica Lee",
+			position: "Senior HVAC Dispatcher, AirNow Services",
+			imageSrc: "/generated/image-a-female-hvac-dispatcher-in-an-office-en.webp"
+		},
+		{
+			name: "David Martinez",
+			position: "Operations Manager, Precision Plumbing",
+			imageSrc: "/generated/image-a-confident-male-plumbing-company-manage.webp"
+		},
+		{
+			name: "Emily Chen",
+			position: "Lead Electrical Tech, BrightCurrent Electric",
+			imageSrc: "/generated/image-a-female-electrical-technician-holding-a.webp"
+		},
+		{
+			name: "Tyrone Jenkins",
+			position: "Sewer Services Supervisor, JetClean Utilities",
+			imageSrc: "/generated/image-a-male-sewer-services-supervisor-onsite-.webp"
+		},
+		{
+			name: "Sarah Thompson",
+			position: "Dispatch Coordinator, HomeWorks Pros",
+			imageSrc: "/generated/image-a-female-home-services-dispatcher-at-her.webp"
+		}
+	]}
+	callsToAction={[
+		{ href: "/demo", label: "Book a demo" },
+		{ href: "/how-it-works", label: "How it works" }
+	]}
 />
-<LogoScroller label="" generating />
+<LogoScroller
+	label="Trusted by industry leaders"
+	logoUrls={[
+		"https://logo.clearbit.com/ars.com",
+		"https://logo.clearbit.com/reliantairconditioning.com",
+		"https://logo.clearbit.com/servicechampions.net",
+		"https://logo.clearbit.com/riversideelectrical.com"
+	]}
+/>
 
 <Summary
 	generating
