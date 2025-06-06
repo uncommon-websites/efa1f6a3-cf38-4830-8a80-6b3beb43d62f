@@ -50,19 +50,22 @@
 
 	// Props
 	const {
-		title = "Get started today",
-		subtitle = "Join now",
-		description = "Ready to experience the difference? Join our community of satisfied customers and see how our solution can transform your workflow. ",
-		imageSrc = "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80",
-		callsToAction = [cta],
-		...rest
-	}: {
-		title?: string;
-		subtitle?: string;
-		description?: string;
-		imageSrc?: string;
-		callsToAction?: CTA[];
-	} = $props();
+	title = "Ready to see Probook in action?",
+	subtitle = "Book a demo today",
+	description = "Experience AI-powered dispatching built for home service teams. Launch faster, maximize revenue, and get hands-on support—direct from our CEO. See why top brands trust Probook to send the right tech, every time.",
+	imageSrc = "/generated/image-a-home-services-dispatch-manager-a-middl.webp",
+	callsToAction = [
+		{ href: "https://calendly.com/george-eliadis/probook-demo", label: "Book a demo", variant: "primary" },
+		{ href: "mailto:support@probook.ai", label: "Talk to the team", variant: "secondary" }
+	],
+	...rest
+}: {
+	title?: string;
+	subtitle?: string;
+	description?: string;
+	imageSrc?: string;
+	callsToAction?: CTA[];
+} = $props();
 </script>
 
 <div class="" {...rest}>

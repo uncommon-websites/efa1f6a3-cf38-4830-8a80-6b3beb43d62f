@@ -35,139 +35,152 @@ Please update features according to the company's product offering. Do not remov
 
 	// Props
 	const {
-		title = "Simple, transparent pricing",
-		subtitle = "Choose the plan that works best for your needs",
-		tierNames = ["Starter", "Pro", "Enterprise"],
+		title = "Dispatch smarter. Drive more revenue",
+		subtitle = "Plans built for high-performance home service teams",
+		tierNames = ["Copilot", "Autopilot", "Enterprise"],
 		features = [
-			{
-				name: "Projects",
-				tiers: {
-					Starter: "5",
-					Pro: "Unlimited",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Team members",
-				tiers: {
-					Starter: "1",
-					Pro: "10",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "Storage",
-				tiers: {
-					Starter: "1GB",
-					Pro: "10GB",
-					Enterprise: "Unlimited"
-				}
-			},
-			{
-				name: "API access",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Custom domains",
-				tiers: {
-					Starter: false,
-					Pro: true,
-					Enterprise: true
-				}
-			},
-			{
-				name: "Analytics",
-				tiers: {
-					Starter: "Basic",
-					Pro: "Advanced",
-					Enterprise: "Advanced"
-				}
-			},
-			{
-				name: "Support response time",
-				tiers: {
-					Starter: "24 hours",
-					Pro: "4 hours",
-					Enterprise: "1 hour"
-				}
-			},
-			{
-				name: "Dedicated account manager",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: true
-				}
-			},
-			{
-				name: "SLA",
-				tiers: {
-					Starter: false,
-					Pro: false,
-					Enterprise: "99.9%"
-				}
+		{
+			name: "Right-tech AI recommendations",
+			tiers: {
+				Copilot: true,
+				Autopilot: true,
+				Enterprise: true
 			}
-		],
+		},
+		{
+			name: "Real-time ServiceTitan integration",
+			tiers: {
+				Copilot: true,
+				Autopilot: true,
+				Enterprise: true
+			}
+		},
+		{
+			name: "AI-driven board reshuffling",
+			tiers: {
+				Copilot: false,
+				Autopilot: true,
+				Enterprise: true
+			}
+		},
+		{
+			name: "Day-of job optimizations",
+			tiers: {
+				Copilot: true,
+				Autopilot: true,
+				Enterprise: true
+			}
+		},
+		{
+			name: "Dispatcher job verification checks",
+			tiers: {
+				Copilot: false,
+				Autopilot: true,
+				Enterprise: true
+			}
+		},
+		{
+			name: "2-day on-site launch & training",
+			tiers: {
+				Copilot: true,
+				Autopilot: true,
+				Enterprise: true
+			}
+		},
+		{
+			name: "24/7 live chat & phone support",
+			tiers: {
+				Copilot: true,
+				Autopilot: true,
+				Enterprise: true
+			}
+		},
+		{
+			name: "Dedicated account manager",
+			tiers: {
+				Copilot: false,
+				Autopilot: false,
+				Enterprise: true
+			}
+		},
+		{
+			name: "Custom reporting & analytics",
+			tiers: {
+				Copilot: false,
+				Autopilot: false,
+				Enterprise: true
+			}
+		},
+		{
+			name: "Enterprise SLA & uptime guarantees",
+			tiers: {
+				Copilot: false,
+				Autopilot: false,
+				Enterprise: true
+			}
+		},
+		{
+			name: "Integration support & developer access",
+			tiers: {
+				Copilot: false,
+				Autopilot: false,
+				Enterprise: true
+			}
+		}
+	],
 		tiers = [
-			{
-				name: "Starter",
-				monthlyPrice: 9.99,
-				yearlyPrice: 7.99, // 20% savings
-				description: "Perfect for individuals and small projects",
-				features: [
-					"Up to 5 projects",
-					"Basic analytics",
-					"24-hour support response time",
-					"1GB storage"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=starter"
-				}
-			},
-			{
-				name: "Pro",
-				monthlyPrice: 29.99,
-				yearlyPrice: 23.99, // 20% savings
-				description: "For growing teams and businesses",
-				features: [
-					"Unlimited projects",
-					"Advanced analytics",
-					"4-hour support response time",
-					"10GB storage",
-					"Custom domains",
-					"Team collaboration tools"
-				],
-				cta: {
-					label: "Get started",
-					href: "/signup?plan=pro"
-				},
-				highlight: true
-			},
-			{
-				name: "Enterprise",
-				monthlyPrice: null,
-				yearlyPrice: null,
-				description: "For large organizations with specific needs",
-				features: [
-					"Everything in Pro",
-					"Dedicated account manager",
-					"1-hour support response time",
-					"Unlimited storage",
-					"Advanced security features",
-					"Custom integrations",
-					"99.9% uptime SLA"
-				],
-				cta: {
-					label: "Contact sales",
-					href: "/contact"
-				}
+		{
+			name: "Copilot",
+			monthlyPrice: 249,
+			yearlyPrice: 229, // 8% savings
+			description: "AI-powered technician matching for teams looking to boost sales with smarter dispatching. Built for ServiceTitan customers.",
+			features: [
+				"Right-tech recommendations (AI-based)",
+				"Day-of job optimizations",
+				"Real-time ServiceTitan integration",
+				"2-day on-site launch with CEO support",
+				"24/7 live chat and phone support"
+			],
+			cta: {
+				label: "Start with Copilot",
+				href: "https://calendly.com/georgeprobook/demo"
 			}
-		]
+		},
+		{
+			name: "Autopilot",
+			monthlyPrice: 449,
+			yearlyPrice: 399, // 11% savings
+			description: "Let AI fully optimize and reshuffle your board in real time—proven to increase efficiency and scale up technician capacity per dispatcher.",
+			features: [
+				"Everything in Copilot",
+				"AI-driven board reshuffling",
+				"Dispatcher job verification checks",
+				"Supports 20–25+ techs per dispatcher"
+			],
+			cta: {
+				label: "Upgrade to Autopilot",
+				href: "https://calendly.com/georgeprobook/demo"
+			},
+			highlight: true
+		},
+		{
+			name: "Enterprise",
+			monthlyPrice: null,
+			yearlyPrice: null,
+			description: "Custom deployments for organizations with unique needs. Includes integration support, advanced analytics, and SLAs.",
+			features: [
+				"Everything in Autopilot",
+				"Dedicated account manager",
+				"Custom reporting and analytics",
+				"Enterprise SLA and uptime guarantees",
+				"Integration support and developer access"
+			],
+			cta: {
+				label: "Contact sales",
+				href: "https://calendly.com/georgeprobook/demo"
+			}
+		}
+	]
 	}: {
 		title?: string;
 		subtitle?: string;

@@ -121,69 +121,78 @@
 	];
 
 	const employeeTestimonials = [
-		{
-			name: "Michael Chen",
-			position: "Senior Developer",
-			company: "Engineering Team",
-			quote:
-				"Working here has given me the opportunity to tackle challenging problems while maintaining a healthy work-life balance. The team culture is supportive and collaborative.",
-			image:
-				"https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Priya Sharma",
-			position: "Product Designer",
-			company: "Design Team",
-			quote:
-				"The creative freedom and opportunity to influence product decisions makes this the best place I've ever worked. I'm constantly learning and growing.",
-			image:
-				"https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		},
-		{
-			name: "Marcus Johnson",
-			position: "Marketing Lead",
-			company: "Marketing Team",
-			quote:
-				"I joined three years ago and have grown tremendously. The leadership truly invests in your development and the work environment is both challenging and supportive.",
-			image:
-				"https://images.unsplash.com/photo-1531384441138-2736e62e0919?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
-		}
-	];
+  {
+    name: "Michael Chen",
+    position: "Senior Developer",
+    company: "Engineering Team",
+    quote:
+      "Collaboration here is the real deal—I've learned so much from teammates and we solve tough problems as a unit. There's always room to grow, and people celebrate your wins.",
+    image:
+      "/generated/image-a-professional-headshot-of-an-asian-male.webp"
+  },
+  {
+    name: "Priya Sharma",
+    position: "Product Designer",
+    company: "Design Team",
+    quote:
+      "At Probook I have real ownership. My ideas turn into live features, and I get to learn from such smart, caring people—it's made me a stronger designer.",
+    image:
+      "/generated/image-a-professional-headshot-of-an-indian-fem.webp"
+  },
+  {
+    name: "Marcus Johnson",
+    position: "Marketing Lead",
+    company: "Marketing Team",
+    quote:
+      "There's a clear path for growth here. Leadership supports you every step—and our team genuinely roots for each other's success.",
+    image:
+      "/generated/image-a-professional-headshot-of-a-black-male-.webp"
+  }
+];
 
 	const processSteps = [
 		{
 			step: 1,
 			title: "Apply",
-			description:
-				"Submit your application through our careers portal with your resume and portfolio."
+			description: "Submit your resume and a short note about what excites you about Probook."
 		},
 		{
 			step: 2,
-			title: "Interview",
-			description: "Meet with our team to discuss your experience, skills, and career aspirations."
+			title: "Initial call",
+			description: "A quick call to talk through your goals, motivations, and your questions about the team or role."
 		},
 		{
 			step: 3,
-			title: "Welcome aboard",
-			description: "Join our team and start your journey building the future with us."
+			title: "Real-world challenge",
+			description: "Complete a relevant task or walkthrough a real Probook problem to see how you think—role dependent."
+		},
+		{
+			step: 4,
+			title: "Final conversation",
+			description: "Meet with our CEO or leadership for a high-level discussion on fit, ownership, and goals."
+		},
+		{
+			step: 5,
+			title: "Fast decision & onboarding",
+			description: "If its a mutual match, youll get your offer fast. Start with a 2-day in-person launch alongside our team and customers."
 		}
 	];
 
 	const values = [
 		{
 			icon: IconHeart,
-			title: "Passion",
-			description: "We're driven by a shared passion for innovation and excellence."
+			title: "Built by dispatchers, for dispatchers",
+			description: "We build what matters most to real users—empathy and field-tested insight guide every feature."
 		},
 		{
 			icon: IconUsers,
-			title: "Collaboration",
-			description: "We believe in teamwork and collaboration to achieve great things."
+			title: "Collaboration and high trust",
+			description: "We solve big problems together. Weekly team check-ins, always-on customer support, and open feedback help us learn fast and win together."
 		},
 		{
 			icon: IconGlobe,
-			title: "Global Impact",
-			description: "We're committed to making a positive impact on the world."
+			title: "Relentless commitment to quality",
+			description: "We take pride in our service and product. Our bar is high—for trust, innovation, and delivering results our customers rely on."
 		}
 	];
 </script>
@@ -191,14 +200,24 @@
 <!-- Hero Section -->
 
 <SecondaryHero
-	title="Join our team of innovators"
-	subtitle="We're looking for passionate people to help us build the future of digital experiences. Discover your next opportunity with us."
-	imageSrc="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+	title="Empower the trades with AI"
+	subtitle="Join a collaborative team building the future of dispatching—where leadership listens, customers come first, and your work makes a real impact."
+	imageSrc="/generated/image-a-modern-office-setting-where-a-diverse-.webp"
 />
 
 <!-- Why Join Us Section -->
 <section class={SECTION_BASE_CLASSES}>
-	<SectionHeader title="Why join us?" subtitle="Build your career while making an impact" />
+	<SectionHeader title="Why join us?" subtitle="Where empathy meets innovation and impact is real" />
+
+	<div class="probook-why-joinus-content text-body mb-10 max-w-3xl">
+		<ul class="space-y-5">
+			<li><strong>Shape the product you use daily</strong> – We're built by dispatchers and home service pros, and we work hand-in-hand with users to shape the roadmap.</li>
+			<li><strong>See the direct impact of your work</strong> – Our software drives major revenue growth and efficiency for every customer. You'll see exactly how your work helps teams perform better.</li>
+			<li><strong>Experience world-class support</strong> – Join a team that champions partnership—not tickets. We measure success by how fast and how well we solve problems for users.</li>
+			<li><strong>Grow fast with a fast-growing company</strong> – We're working with some of the top service teams in the industry—and growing quickly. There's room to move up, out, and deeper here.</li>
+		</ul>
+		<p class="mt-8">Every new teammate joins our hands-on, 2-day launch supporting dispatchers alongside our CEO. You’ll see our commitment to customers, innovation, and rapid growth—up close.</p>
+	</div>
 
 	<div class="mt-16 grid gap-4 md:grid-cols-3">
 		{#each benefits as benefit}
