@@ -11,7 +11,7 @@
 </script>
 
 <CustomerCardHero
-	title="Every call, perfectly dispatched"
+	title="Every phone call, perfectly dispatched"
 	subtitle="The fastest way to assign the right tech, boost revenue, and run a smoother board."
 	centered={false}
 	customers={[
